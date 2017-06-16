@@ -5,11 +5,11 @@ nfs
 
 [OSEv3:vars]
 ansible_ssh_user=root
-deployment_type=origin
+deployment_type=openshift-enterprise
 openshift_master_identity_providers=[{'name': 'htpasswd_auth', 'login': 'true', 'challenge': 'true', 'kind': 'HTPasswdPasswordIdentityProvider', 'filename': '/etc/origin/master/htpasswd'}]
 containerized=true
-openshift_release=v1.5.0
-openshift_image_tag=v1.5.0-rc.0
+openshift_release=v3.6.0-alpha.2
+openshift_image_tag=v3.6.0-alpha.2
 openshift_public_hostname=console.hughestech.space
 openshift_master_default_subdomain=apps.console.hughestech.space
 openshift_hosted_metrics_deploy=true
